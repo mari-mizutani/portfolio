@@ -1,4 +1,6 @@
-// ---------hero anime.js---------//
+// ===============================================
+//hero anime.js
+// ===============================================
 
 //green circle
 anime({
@@ -19,3 +21,17 @@ anime({
     easing:'easeInOutExpo',
     duration: 4000,
 });
+
+// ===============================================
+//navbar bg color change with scroll 
+// ===============================================
+const navBg = document.querySelector('.navbar');
+
+window.onscroll=function(){
+  let top = window.scrollY;
+  if(top>=100){
+    navBg.classList.add('nav-bg');
+  }else{
+    navBg.classList.remove('nav-bg');
+  }
+}
