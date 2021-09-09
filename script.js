@@ -3,12 +3,8 @@
 //green circle
 anime({
     targets: '.circle',
-    translateX: {
-      value: 250,
-      duration: 800
-    },
     scale: {
-      value: 3,
+      value: 2.5,
       duration: 1600,
       delay: 800,
       easing: 'easeInOutQuart'
@@ -18,8 +14,8 @@ anime({
 
 //title
 anime({
-    targets: '.name, .ocupation',
+    targets: '.name, .occupation',
     opacity: ['0', '1'],
     easing:'easeInOutExpo',
-    duration: 3000,
+    duration: 4000,
 });

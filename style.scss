@@ -2,7 +2,7 @@ $assetPath :"/img";
 
 body{
     background-color: rgb(247, 247, 247);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 nav,h1{
@@ -24,6 +24,19 @@ nav,h1{
     @media only screen and (max-width: 576px) {
         background-image: url(#{$assetPath}/top_sm.jpeg);
     }
+
+    .navbar-dark{
+        a:link{
+            color: white;
+        }
+        a:hover{
+            color: rgb(193, 193, 193);
+        }
+        a:visited{
+            color: white;
+        }
+    }
+
     .title{ 
         z-index: 1;
         text-align: center;
@@ -45,7 +58,7 @@ nav,h1{
         height: 280px;
         position: absolute;
         top: 20%;
-        left: 10%;
+        left: 40%;
         background-color: #738200;
         mix-blend-mode: multiply;
         border-radius: 50%;
@@ -55,4 +68,17 @@ nav,h1{
         }
     }
 
+    .arrow{
+        position: absolute;
+        top:90%;
+        left: 50%;
+    }
+
+}
+
+#about{
+    h2{
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.1rem;
+    }
 }
