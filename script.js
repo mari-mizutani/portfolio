@@ -35,3 +35,7 @@ window.onscroll=function(){
     navBg.classList.remove('nav-bg');
   }
 }
+
+// ===============================================
+//about anime.js
+// ===============================================

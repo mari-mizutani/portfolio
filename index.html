@@ -4,12 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Mari Mizutani Portfolio | Junior frontend web developer, graphic designer">
+    <meta name="keywords" content="Mari Mizutani, portfolio, graphic designer, web developer, frontend, front-end, fornt end, junior web developer">
     <meta name="author" content="Mari Mizutani">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="Mari Mizutani Portfolio">
+    <meta property="og:description" content="Mari Mizutani Portfolio">
+    <meta property="og:image" content="img/profile_illust.png">
     <meta property="og:url" content="">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <!-- Google font -->
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="">
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- General css-->
@@ -25,8 +25,8 @@
     <title>Mari Mizutani</title>
 </head>
 <body>
-  <div class="hero">
-    <header class="container-fluid" id="top">
+  <div class="hero d-flex position-relative">
+    <header id="top">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-4">
         <!-- logo -->
         <a class="navbar-brand" href="#">
@@ -39,39 +39,184 @@
         <!-- nav -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item px-3">
-              <a class="nav-link" aria-current="page" href="#">About</a>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#">Projects</a>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item px-2">
               <a class="nav-link" href="#">Design</a>
             </li>
-            <li class="nav-item px-3">
+            <li class="nav-item pl-1">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="row text-center text-white title">
+    <div class="row col-12 px-5 m-auto text-white title">
       <h1 class="name display-1">MARI MIZUTANI</h1>
       <h4 class="occupation">Junior Frontend Web Developer, Graphic Designer</h4>
     </div>
-    <div class="circle"></div>
-    <div class="arrow">
+    <div class="circle position-absolute"></div>
+    <div class="arrow position-absolute">
       <a href="#about"><img src="img/down-arrow.png" alt="down arrow"></a>
     </div>
   </div>
-<div class="row my-5 text-center" id="about">
-  <h2>About Me</h2>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, numquam consequatur. Suscipit sed, facere culpa eos reiciendis eius ullam aliquid sapiente praesentium perferendis, impedit explicabo natus architecto? Soluta, fugiat provident.</p>
-</div>
+  <!-- About -->
+  <div class="row col-md-9 col-sm-12 my-5 mx-auto" id="about">
+    <h2 class="text-center mb-3">About Me</h2>
+    <div class="row mx-auto flex-wrap-reverse">
+      <div class="col-lg-6 col-md-12 m-auto about-p">
+        <p>
+          I've been working as a graphic designer for the past 8 years, designing mainly DTP materials.</p>
+        <p>
+          Now I am looking for a new challenge. <br>
+          Though I've used my basic knowledge of HTML and CSS in my past jobs, I always wanted to get more knowledge about other programming languages such as Javascript and PHP. So, I decided to study Fullstack web development at BeCode Antwerpen in April 2021.
+        </p>
+        <p>
+          After 6 months studying, my coding skill is improving. Now, for more improvement, I am learning about React and Angular.        </p>
+        <p>
+          I also worked in the hospitality field in Japan and Canada before I jumped into the design field, so, I am confident in my communication skills.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 self-img pb-5">
+        <img class="img-fluid mx-auto d-block" src="img/profile_illust.png" alt="illustration of myself">
+      </div>
+    </div>
+  </div>
+  <!-- Skills and Languages-->
+  <div class="row g-ex col-md-9 col-sm-12 mx-auto" id="skills">
+    <!-- Skills -->
+    <div class="col-lg-6 col-md-12 mx-auto my-3">
+      <h2 class="text-center mb-4">Skills</h2>
+      <table>
+        <tr>
+          <td class="skill-title">HTML</td>
+          <td class="d-flex">
+            <div class="chart html"></div>
+            <div class="chart-rest html-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">CSS</td>
+          <td class="d-flex">
+            <div class="chart css"></div>
+            <div class="chart-rest css-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">Javascript</td>
+          <td class="d-flex">
+            <div class="chart js"></div>
+            <div class="chart-rest js-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">PHP</td>
+          <td class="d-flex">
+            <div class="chart php"></div>
+            <div class="chart-rest php-r"></div>
+          </td>
+        </tr>
+        <td class="skill-title">Bootstrap</td>
+        <td class="d-flex">
+          <div class="chart bootstrap"></div>
+          <div class="chart-rest bootstrap-r"></div>
+        </td>
+        </tr>
+        <tr>
+          <td class="skill-title">SASS</td>
+          <td class="d-flex">
+            <div class="chart sass"></div>
+            <div class="chart-rest sass-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">React</td>
+          <td class="d-flex">
+            <div class="chart react"></div>
+            <div class="chart-rest react-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">Angular</td>
+          <td class="d-flex">
+            <div class="chart angular"></div>
+            <div class="chart-rest angular-r"></div>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td class="skill-title">Illustrator</td>
+          <td class="d-flex">
+            <div class="chart ai"></div>
+            <div class="chart-rest ai-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">Photoshop</td>
+          <td class="d-flex">
+            <div class="chart ps"></div>
+            <div class="chart-rest ps-r"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Languages -->
+    <div class="col-lg-6 col-md-12 my-3">
+      <h2 class="text-center mb-4">Languages</h2>
+      <table>
+        <tr>
+          <td class="skill-title">Japanese</td>
+          <td class="d-flex">
+            <div class="chart jp"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">English</td>
+          <td class="d-flex">
+            <div class="chart en"></div>
+            <div class="chart-rest en-r"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="skill-title">Dutch</td>
+          <td class="d-flex">
+            <div class="chart nl"></div>
+            <div class="chart-rest nl-r"></div>
+          </td>
+      </table>
 
-  <!-- JavaScript -->
+      <h2 class="text-center my-4">Like</h2>
+      <p class="text-center">Traveling, Piano, Clarinet, Coffee (I'm an ex-Barista),  Art , Cats</p>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="row col-md-9 col-sm-12 my-5 mx-auto" id="projects">
+    <h2 class="text-center mb-3">Projects</h2>
+    <div class="col-12 g-5">
+      <div class="col-3 square">
+        <img src="" alt="">
+      </div>
+      <div class="col-3 square">
+        <img src="" alt="">
+      </div>
+      <div class="col-3 square">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- General JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
