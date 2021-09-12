@@ -5,7 +5,7 @@ body{
     overflow-x: hidden;
 }
 
-nav,h1{
+nav,h1,h5{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
     color: white;
@@ -13,7 +13,15 @@ nav,h1{
 h2{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
+    font-size: 2rem;
+    color: #738200;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;
     font-weight:300;
+    font-size: 1.5rem;
 }
 
 p,table{
@@ -21,6 +29,7 @@ p,table{
     font-weight:lighter;
 }
 
+//==================== hero ====================
 .hero{
     background-image: url(#{$assetPath}/top.jpeg);
     background-position: center;
@@ -80,16 +89,22 @@ p,table{
         top:90%;
         left: 50%;
     }
-
 }
+//==================== hero till here ====================
 
-// skill chart
+//==================== skill chart ====================
 .row.g-ex {
     margin-left: -10px;
     margin-right: -10px;
     [class*="col-"] {
         padding-left: 80px;
         padding-right: 80px;
+    }
+    @media only screen and (max-width: 576px) {
+        [class*="col-"] {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 }
 
@@ -190,4 +205,62 @@ table{
     .nl-r{
         width: 80%;
     }
+}
+small{
+    color: rgb(175, 175, 175);
+}
+//==================== skill chart till here ====================
+
+
+//==================== projects and Design ====================
+#projects{
+    background-color: #eaeaea;
+    @media only screen and (max-width: 576px) {
+        background: none;
+    }
+}
+.hover-zoom{
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+
+    .text {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        opacity: 0;
+        @media only screen and (max-width: 768px) {
+            top: 10%;
+        }
+      }
+
+    :hover{
+        img{
+        opacity: 0.6;
+        transition: transform .5s;
+        transform: scale(1.2);
+        cursor: pointer;
+        }
+
+    .text{
+    opacity: 1;
+    transition: transform .5s;
+    }
+
+    span{
+        border: 1px solid white;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+    }
+}
+}
+//==================== projects and Design till here ====================
+
+//==================== contact ====================
+#contact{
+    background-color: #eaeaea;
 }
