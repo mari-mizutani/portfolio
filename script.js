@@ -34,4 +34,4 @@ window.onscroll=function(){
   }else{
     navBg.classList.remove('nav-bg');
   }
-}
+};

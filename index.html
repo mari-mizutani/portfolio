@@ -38,17 +38,17 @@
         </button>
         <!-- nav -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item px-2">
+          <ul class="navbar-nav g-5">
+            <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item px-2">
+            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item px-2">
+            <li class="nav-item">
               <a class="nav-link" href="#design">Design</a>
             </li>
-            <li class="nav-item pl-1">
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -68,7 +68,7 @@
   <div class="row col-md-9 col-sm-12 my-5 mx-auto" id="about">
     <h2 class="text-center my-3">About Me</h2>
     <div class="row mx-auto flex-wrap-reverse">
-      <div class="col-lg-6 col-md-12 m-auto about-p">
+      <div class="col-lg-6 col-md-12 m-auto">
         <p>
           I've been working as a graphic designer for the past 8 years, designing mainly DTP materials.</p>
         <p>
@@ -81,7 +81,7 @@
           I also worked in the hospitality field in Japan and Canada before I jumped into the design field, so, I am confident in my communication skills.
         </p>
       </div>
-      <div class="col-lg-6 col-md-12 self-img pb-5">
+      <div class="col-lg-6 col-md-12 self-img pb-5 about-img">
         <img class="img-fluid mx-auto d-block" src="img/profile_illust.png" alt="illustration of myself">
       </div>
     </div>
@@ -250,7 +250,7 @@
           <a href="#">
             <img class="img-fluid d-block" src="img/pokedex.jpg" alt="Pokedex image">
             <div class="text">
-              <h5 class="mb-4">Poledex</h5>
+              <h5 class="mb-4">Pokedex</h5>
               <span class="p-2">MORE INFO</span>
             </div>
           </a>
@@ -295,7 +295,7 @@
           <a href="#">
             <img class="img-fluid d-block" src="img/ebook.jpg" alt="ebook">
             <div class="text">
-              <h5 class="mb-4">eBook cover</h5>
+              <h5 class="mb-4">Hoyo-sha</h5>
               <span class="p-2">MORE INFO</span>
             </div>
           </a>
@@ -324,15 +324,36 @@
 
   <!-- contact -->
   <div id="contact" class="py-3">
-    <div class="col-sm-8 col-xs-12 my-5 mx-auto px-0 pb-5" >
-      <h2 class="text-center my-3">Contact Me</h2>
-      <div class="row row-cols-2 row-cols-md-3 mt-5">
+    <form action="https://formsubmit.co/marimizutani0123@gmail.com" method="POST">
+      <div class="col-lg-4 col-md-6 my-5 mx-auto px-4">
+        <h2 class="text-center my-3">Contact Me</h2>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your name is here" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="message1" class="form-label">Message</label>
+          <textarea class="form-control" name="message" id="message" rows="3"  required></textarea>
+        </div>
+        <button type="button" class="btn btn-secondary">Submit</button>
       </div>
-    </div>
+    </form>
   </div>  
-        
-  <footer>
 
+  <!-- footer -->
+  <footer class="py-5">
+    <div class="col-12 text-center g-5">
+      <a href="https://github.com/mari-mizutani" target="blank"><img  class="img-fluid m-2" src="img/github.png" alt="github"></a>
+      <a href="www.linkedin.com/in/mari-mizutani" target="blank"><img  class="img-fluid m-2" src="img/linkedin-logo.png" alt="linkedin"></a>
+      <a href="https://www.instagram.com/maryjpn0123/" target="blank"><img  class="img-fluid m-2" src="img/instagram.png" alt="github"></a>
+    </div>
+    <div class="text-center mt-5 px-5">
+      <p>Copyright © 2021 Mari Mizutani. All rights reserved</p>
+    </div>
   </footer>
 
 

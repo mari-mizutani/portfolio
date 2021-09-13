@@ -1,4 +1,11 @@
 $assetPath :"/img";
+$darkgreen:#738200;
+$backlightgray:#eaeaea;
+
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background-color: rgb(247, 247, 247);
@@ -14,7 +21,7 @@ h2{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
     font-size: 2rem;
-    color: #738200;
+    color: $darkgreen;
 }
 
 h3{
@@ -52,7 +59,7 @@ p,table{
             color: white;
         }
         a:hover{
-            color: rgb(193, 193, 193);
+            color: $backlightgray;
         }
         a:visited{
             color: white;
@@ -76,7 +83,7 @@ p,table{
         height: 280px;
         top: 20%;
         left: 40%;
-        background-color: #738200;
+        background-color: $darkgreen;
         mix-blend-mode: multiply;
         border-radius: 50%;
         @media only screen and (max-width: 576px) {
@@ -91,6 +98,7 @@ p,table{
     }
 }
 //==================== hero till here ====================
+
 
 //==================== skill chart ====================
 .row.g-ex {
@@ -119,7 +127,7 @@ table{
 
     .chart { 
         display: grid;  
-        border: 8px solid #738200;  
+        border: 8px solid $darkgreen;  
         position: relative;  
         overflow: hidden; 
         }
@@ -214,7 +222,7 @@ small{
 
 //==================== projects and Design ====================
 #projects{
-    background-color: #eaeaea;
+    background-color: $backlightgray;
     @media only screen and (max-width: 576px) {
         background: none;
     }
@@ -261,6 +269,10 @@ small{
 //==================== projects and Design till here ====================
 
 //==================== contact ====================
-#contact{
-    background-color: #eaeaea;
+#contact,footer{
+    background-color: $backlightgray;
+
+    a:hover{
+        opacity: 0.8;
+    }
 }
