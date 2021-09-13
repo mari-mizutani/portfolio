@@ -324,7 +324,7 @@
 
   <!-- contact -->
   <div id="contact" class="py-3">
-    <form action="https://formsubmit.co/marimizutani0123@gmail.com" method="POST">
+    <form action="https://formspree.io/f/xdoybodg" method="POST">
       <div class="col-lg-4 col-md-6 my-5 mx-auto px-4">
         <h2 class="text-center my-3">Contact Me</h2>
         <div class="mb-3">
@@ -333,13 +333,17 @@
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+          <input type="email" name="_replyto" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="subject" name="subject" class="form-control" id="subject" required>
         </div>
         <div class="mb-3">
           <label for="message1" class="form-label">Message</label>
           <textarea class="form-control" name="message" id="message" rows="3"  required></textarea>
         </div>
-        <button type="button" class="btn btn-secondary">Submit</button>
+        <button type="submit" class="btn btn-secondary" value="send">Submit</button>
       </div>
     </form>
   </div>  
