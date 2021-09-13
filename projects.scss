@@ -33,6 +33,9 @@
         color: black;
     }
     .see-more1{
+        text-align: left;
+    }
+    .see-more2{
         text-align: right;
     }
     .see-more1,.see-more2{
@@ -43,7 +46,7 @@
             text-decoration: none;
         }
         a:hover{
-            color: $lightgreen;
+            opacity: 0.8;
         }
     }
 }
