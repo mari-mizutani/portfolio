@@ -1,5 +1,6 @@
 $assetPath :"/img";
 $darkgreen:#738200;
+$lightgreen:rgb(128, 139, 48);
 $backlightgray:#eaeaea;
 
 
@@ -10,6 +11,7 @@ html {
 body{
     background-color: rgb(247, 247, 247);
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 nav,h1,h5{
@@ -17,6 +19,7 @@ nav,h1,h5{
     letter-spacing: 0.1rem;
     color: white;
 }
+
 h2{
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
@@ -229,7 +232,7 @@ small{
 }
 .hover-zoom{
     overflow: hidden;
-    background-color: black;
+    background-color: $darkgreen;
     position: relative;
 
     .text {
@@ -247,7 +250,7 @@ small{
 
     :hover{
         img{
-        opacity: 0.6;
+        opacity: 0.2;
         transition: transform .5s;
         transform: scale(1.2);
         cursor: pointer;
