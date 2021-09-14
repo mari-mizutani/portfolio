@@ -3,6 +3,12 @@
 .project-title{
     margin-top: 120px;
 
+    a:link, a:visited{
+        color: $lightgreen;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
     h2{
         color: black;
     }
@@ -25,7 +31,8 @@
 .project-detail{
     small{
         font-size: 0.6rem;
-        a:link{
+        a:link, a:visited{
+            color: $lightgreen;
             text-decoration: none;
         }
     }
