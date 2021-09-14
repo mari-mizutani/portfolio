@@ -22,6 +22,15 @@ anime({
     duration: 4000,
 });
 
+//arrow
+anime({
+  targets: '.arrow',
+  translateY: -20,
+  direction: 'alternate',
+  easing: 'easeInOutSine',
+  loop: true
+});
+
 // ===============================================
 //navbar bg color change with scroll 
 // ===============================================
