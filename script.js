@@ -53,7 +53,7 @@ const navBg = document.querySelector('.navbar');
 
 window.onscroll=function(){
   let top = window.scrollY;
-  if(top>=100){
+  if(top>=20){
     navBg.classList.add('nav-bg');
   }else{
     navBg.classList.remove('nav-bg');
