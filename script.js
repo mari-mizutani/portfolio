@@ -1,19 +1,4 @@
 // ===============================================
-//hamburger icon
-// ===============================================
-let hamburger = document.querySelector(".navbar-toggler-icon-custom");
-let line1 = document.querySelector(".line1");
-let line2 = document.querySelector(".line2");
-let line3 = document.querySelector(".line3");
-
-hamburger.addEventListener("click",()=>{
-  line1.classList.toggle("open1");
-  line2.classList.toggle("open2");
-  line3.classList.toggle("open3");
-})
-
-
-// ===============================================
 //hero
 // ===============================================
 
